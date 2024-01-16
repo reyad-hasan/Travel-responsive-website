@@ -88,14 +88,14 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 16px;
+  border-radius: 1rem;
   margin-top: 40px;
 }
 .bg_opacity {
   background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.774));
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
 }
@@ -105,7 +105,7 @@ a:hover {
 }
 .banner_title {
   color: var(--secondaryColor);
-  font-size: 74px;
+  font-size: 4.5rem;
   font-weight: 800;
 }
 .description {
@@ -115,14 +115,13 @@ a:hover {
   padding: 40px 50px;
 }
 .find_container {
-  height: 100px;
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 0px 60px;
+  padding: 20px 60px;
 }
 .find_box {
   background-color: var(--secondaryColor);
@@ -181,5 +180,25 @@ a:hover {
   }
   #check:checked ~ ul {
     right: 0;
+  }
+  .description_box {
+    padding: 0px 50px;
+  }
+  .banner_title {
+    font-size: 2.5rem;
+  }
+  .description {
+    padding: 25px 0px;
+  }
+  .find_container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .find_box {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .primary_btn {
+    width: 100%;
   }
 }
