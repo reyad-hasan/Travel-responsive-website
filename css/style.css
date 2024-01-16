@@ -13,11 +13,14 @@
   --descriptionColor1: rgba(19, 19, 24, 0.7);
   --descriptionColor2: #5a5a5d;
 }
+
+a {
+  transition: 0.5s;
+}
 /* header section styles */
 header {
   max-width: 1280px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 /* navbar style */
 nav {
@@ -25,45 +28,84 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 20px 0px;
-  /* border: 1px solid green; */
 }
 .logo_box {
   display: flex;
   align-items: center;
 }
-.logo a {
+.logo_box a {
+  text-decoration: none;
+}
+.logo_box a:hover {
+  transform: scale(1.1);
+}
+.logo {
   color: var(--primaryColor);
   font-size: 36px;
   font-weight: 800;
-  margin-left: 20px;
-  text-decoration: none;
-}
-.logo {
-  transition: 0.5s;
-}
-.logo:hover {
-  transform: scale(1.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
 }
 .travel {
   color: var(--btnColor);
 }
-.active {
-  color: var(--btnColor);
-}
-nav > ul {
+nav ul {
   display: flex;
   align-items: center;
 }
-nav > ul li {
-  list-style: none;
-  margin-left: 25px;
+nav ul li {
   font-size: 18px;
+  list-style: none;
+  margin-left: 30px;
 }
-nav > ul li a {
-  text-decoration: none;
+nav ul li a {
   color: var(--descriptionColor2);
-  transition: 0.5s;
+  text-decoration: none;
 }
-nav > ul li a:hover {
+a.active,
+a:hover {
   color: var(--btnColor);
+}
+.checkBtn {
+  font-size: 30px;
+  color: var(--primaryColor);
+  float: left;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 858px) {
+  .checkBtn {
+    display: block;
+  }
+  header {
+    padding: 0px 50px;
+  }
+  nav {
+    flex-direction: row-reverse;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vb;
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 85px;
+    right: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 7px 0px;
+    color: var(--secondaryColor);
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
 }
