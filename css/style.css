@@ -304,11 +304,63 @@ main {
   margin: 10px 0px;
 }
 .services_description {
-  color: #5a5a5d;
+  color: var(--descriptionColor2);
   font-size: 0.9rem;
   line-height: 20px;
 }
 /* choose us section styles end */
+/* deals and discounts section styles start */
+.deals_and_discounts_section {
+  margin-top: 100px;
+  /* border: 1px solid red; */
+}
+.discounts_container {
+  background-image: url(../Images/Group2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 75px 0px;
+  margin-bottom: 25px;
+}
+.discounts_opacity_box {
+  width: 579px;
+  border-radius: 16px;
+  border: 2px solid var(--secondaryColor);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  margin-right: 75px;
+  padding: 40px;
+}
+.date_and_location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.date_and_location span {
+  color: var(--descriptionColor2);
+  font-size: 0.8rem;
+  margin-right: 20px;
+  margin-left: 5px;
+}
+.location_price {
+  color: var(--btnColor);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 15px 0px;
+}
+.discounts_container2 {
+  justify-content: start;
+  padding-left: 75px;
+  background-image: url(../Images/Group3.png);
+}
+.packages_btn {
+  text-align: center;
+}
+/* deals and discounts section styles end */
 /* responsive styles */
 @media screen and (max-width: 576px) {
   .checkBtn {
@@ -394,6 +446,9 @@ main {
   #box_7 {
     grid-column: span 8;
   }
+  .choose_us_section {
+    margin-top: 50px;
+  }
   .hotel_and_services_container {
     flex-direction: column;
   }
@@ -402,5 +457,17 @@ main {
   }
   #box_services {
     margin: 0;
+  }
+  .deals_and_discounts_section {
+    margin-top: 50px;
+  }
+  .discounts_container {
+    padding: 30px;
+    justify-content: center;
+    align-items: end;
+    height: 80vh;
+  }
+  .discounts_opacity_box {
+    margin-right: 0px;
   }
 }
