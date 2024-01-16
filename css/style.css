@@ -368,10 +368,14 @@ main {
 .first_container {
   display: flex;
   gap: 20px;
+  margin-bottom: 70px;
 }
 /* first left contend style */
 .first_left_contend {
   width: 50%;
+}
+.simple_description {
+  color: var(--primaryColor);
 }
 /* first right contend style */
 .first_right_contend {
@@ -385,6 +389,70 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+/* second left contend */
+.second_left_contend {
+  width: 45%;
+  height: 43vh;
+  border: 1px solid var(--btnColor);
+  background-color: var(--secondaryColor);
+  border-radius: 1rem;
+  padding: 30px;
+}
+.divider {
+  height: 1px;
+  background: rgba(19, 19, 24, 0.1);
+  margin: 20px 0px;
+}
+.second_left_contend input {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  border-radius: 0.5rem;
+  background: rgba(19, 19, 24, 0.05);
+  border: none;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.form_btn {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+/* second right contend */
+.second_right_contend {
+  width: 55%;
+  height: 43vh;
+  background-image: url(../Images/Rectangle2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  position: relative;
+}
+.save_up_box {
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  background-color: var(--btnColor);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 13%;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.save_travel {
+  color: var(--secondaryColor);
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.save_discount {
+  color: var(--secondaryColor);
+  font-size: 1.8rem;
+  font-weight: 800;
   text-align: center;
 }
 /* simple perfect section styles end */
@@ -496,6 +564,7 @@ main {
   }
   .first_container {
     flex-direction: column;
+    margin-bottom: 50px;
   }
   .first_left_contend {
     width: 100%;
@@ -503,5 +572,13 @@ main {
   .first_right_contend {
     width: 100%;
     margin-top: 10px;
+  }
+  .second_left_contend {
+    width: 100%;
+    height: 53vh;
+  }
+  .second_right_contend {
+    width: 100%;
+    height: 53vh;
   }
 }
