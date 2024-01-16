@@ -209,7 +209,7 @@ main {
 }
 .destination_container {
   display: grid;
-  gap: 20px;
+  gap: 18px;
   grid-template-columns: repeat(8, 1fr);
 }
 .img_box {
@@ -221,6 +221,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.img_box:hover {
+  transform: scale(1.1);
 }
 #box_1,
 #box_2,
@@ -265,10 +270,52 @@ main {
   letter-spacing: 1px;
 }
 /* destination section styles send */
+/* choose us section styles start */
+.choose_us_section {
+  margin-top: 100px;
+}
+.hotel_and_services_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.services_box {
+  flex-grow: 1;
+  width: 50vb;
+  background-color: rgba(251, 181, 99, 0.05);
+  border: 2px solid rgba(251, 181, 99, 0.2);
+  border-radius: 1rem;
+  padding: 50px 25px;
+}
+.services_box2 {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+#box_services {
+  margin: 0 25vb;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+.services_title {
+  color: var(--primaryColor);
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 10px 0px;
+}
+.services_description {
+  color: #5a5a5d;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+/* choose us section styles end */
 /* responsive styles */
 @media screen and (max-width: 576px) {
   .checkBtn {
     display: block;
+  }
+  .main_title {
+    font-size: 2rem;
   }
   header,
   main {
@@ -318,6 +365,7 @@ main {
   }
   .popular_tours_section {
     flex-direction: column;
+    margin-top: 20px;
   }
   .popular_left_contend {
     width: 100%;
@@ -330,5 +378,29 @@ main {
   }
   .read_more {
     width: 50%;
+  }
+  .destination_section {
+    margin-top: 50px;
+  }
+  .destination_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #box_1,
+  #box_2,
+  #box_3,
+  #box_4,
+  #box_5,
+  #box_6,
+  #box_7 {
+    grid-column: span 8;
+  }
+  .hotel_and_services_container {
+    flex-direction: column;
+  }
+  .services_box {
+    width: 100%;
+  }
+  #box_services {
+    margin: 0;
   }
 }
