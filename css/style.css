@@ -361,6 +361,33 @@ main {
   text-align: center;
 }
 /* deals and discounts section styles end */
+/* simple perfect section styles start */
+.simple_perfect_section {
+  margin-top: 70px;
+}
+.first_container {
+  display: flex;
+  gap: 20px;
+}
+/* first left contend style */
+.first_left_contend {
+  width: 50%;
+}
+/* first right contend style */
+.first_right_contend {
+  width: 50%;
+  height: 51vh;
+  background-image: url(../Images/Group6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* simple perfect section styles end */
 /* responsive styles */
 @media screen and (max-width: 576px) {
   .checkBtn {
@@ -431,6 +458,9 @@ main {
   .read_more {
     width: 50%;
   }
+  .deals_and_discounts_section,
+  .simple_perfect_section,
+  .choose_us_section,
   .destination_section {
     margin-top: 50px;
   }
@@ -446,9 +476,6 @@ main {
   #box_7 {
     grid-column: span 8;
   }
-  .choose_us_section {
-    margin-top: 50px;
-  }
   .hotel_and_services_container {
     flex-direction: column;
   }
@@ -458,9 +485,6 @@ main {
   #box_services {
     margin: 0;
   }
-  .deals_and_discounts_section {
-    margin-top: 50px;
-  }
   .discounts_container {
     padding: 30px;
     justify-content: center;
@@ -469,5 +493,15 @@ main {
   }
   .discounts_opacity_box {
     margin-right: 0px;
+  }
+  .first_container {
+    flex-direction: column;
+  }
+  .first_left_contend {
+    width: 100%;
+  }
+  .first_right_contend {
+    width: 100%;
+    margin-top: 10px;
   }
 }
